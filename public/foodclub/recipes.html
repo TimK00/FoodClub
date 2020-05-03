@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css/display.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+    />
+    <title>My Recipes</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      
+        <nav class ="navigation-bar">
+          <img class ="logo" src="../css/images/logo.png" alt="logo">
+          <h2>FoodClub</h2>
+          <ul>
+            <li class ="topnav"><a href="" onclick="doLogout(event)">Logout</a></li>
+            <li class ="topnav"><a href="../about.html">About</a></li>
+            <li class ="topnav"><a href="../contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="search">
+          <input type="text" id="myInput" onkeyup="searchList()" placeholder="Search for recipes by name..." title="Type in a recipe's name">
+        </div>
+
+        <div class="container">
+          <div class="recipe-form">
+            <form>
+              <div class="form-row">
+                <div class="col-auto">
+                  <label class="sr-only" for="formInputRecipeName">Recipe Name</label>
+                  <input
+                    id="formInputRecipeName"
+                    class="form-control"
+                    type="text"
+                    name="recipe-name"
+                    placeholder="Recipe name"
+                  />
+                </div>
+                <div class="col-auto">
+                  <label class="sr-only" for="formInputDifficulty">Difficulty</label>
+                  <input
+                    id="formInputDifficulty"
+                    class="form-control"
+                    type="text"
+                    name="difficulty"
+                    placeholder="Difficulty"
+                  />
+                </div>
+                </div>
+                <div class="col-auto">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    onclick="doAddRecipe(event)"
+                  >
+                    ADD
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+    
+        <div id="recipes">your recipe list is empty</div>
+      </div>
+
+    </div>
+  </body>
+  <script src="../lib/api.config.js"></script>
+  <script src="../lib/simple-storage.js"></script>
+  <script src="../lib/service-helpers.js"></script>
+  <script src="../lib/auth.service.js"></script>
+  <script src="../lib/auth.js"></script>
+  <script src="../lib/auth.guard.js"></script>
+  <script src="./recipe-api.service.js"></script>
+  <script src="./recipes.service.js"></script>
+  <script src="./recipes.js"></script>
+  <script src="../app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="search.js"></script>
+</html>

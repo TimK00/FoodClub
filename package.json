@@ -1,12 +1,12 @@
 {
-  "name": "week3",
-  "version": "1.0.0",
-  "description": "Serving our website to a browser and extend our website's capabilities with an API.",
+  "name": "foodclub",
+  "version": "2.0.0",
+  "description": "Final Working Build for Course Project",
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./server"
   },
-  "author": "",
+  "author": "Tim Kirkpatrick",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/navBar.css" />
+    <link rel="stylesheet" href="./css/display.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+    />
+    <title>About Us</title>
   </head>
   <body>
     <div class="main-wrapper">
@@ -16,24 +24,28 @@
           <ul>
             <li class ="topnav"><a href="" onclick="doLogout(event)">Logout</a></li>
             <li class ="topnav"><a href="./contact-us.html">Contact Us</a></li>
-            <li class ="topnav"><a href="./home.html">Home</a></li>
-          </ul>
-        </nav>
-
-        <nav class ="sidebar">
-          <img class ="user-photo" src="./css/images/img-upload.jpeg" alt="your image here">
-          <ul>
-            <li class ="sidenav"><a href="./user.html">My Account</a></li>
-            <li class ="sidenav"><a href="./recipes.html">My Recipes</a></li>
+            <li class ="topnav"><a href="./foodclub/recipes.html">My Recipes</a></li>
           </ul>
         </nav>
 
       <div class="content">
-        <div class="center">
-          <h2>Under Construction</h2>
+        <div class="center-text">
+          <h2>About Us</h2>
+          <br>
+          <h4>FoodClub is all about community and food.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a dolor nisl. Aenean eget porttitor nulla, quis consectetur lectus. Cras magna quam, placerat eu vulputate quis, eleifend non magna. Ut et lectus sed diam iaculis lacinia et sed nunc. Fusce quis est odio. Duis facilisis quis nibh eu faucibus.</h4>   
+          <h4>Curabitur volutpat ipsum lacus, et iaculis nunc dictum eu. Donec vulputate nisi neque, eu tincidunt nunc faucibus vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer id sapien vitae elit ullamcorper lacinia at ac ligula. </h4>
+          <br>
+          <h2>Thank you for using FoodClub</h2>
         </div>
       </div>
 
     </div>
   </body>
+  <script src="./lib/api.config.js"></script>
+  <script src="./lib/simple-storage.js"></script>
+  <script src="./lib/service-helpers.js"></script>
+  <script src="./lib/auth.service.js"></script>
+  <script src="./lib/auth.js"></script>
+  <script src="./lib/auth.guard.js"></script>
+  <script src="./app.js"></script>
 </html>

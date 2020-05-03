@@ -1,0 +1,53 @@
+.login-content {
+    background-color: #228B22;
+    height: 100%;
+}
+
+.card-body {
+    margin: -7px;
+    background-color: #228B22;
+}
+
+.card-body > h3,
+.card-body > h4 {
+    text-align: center;
+}
+  
+.card-split {
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: 20px;
+}
+
+.card-title,
+.form-group-btn {
+    padding-left: 1.25rem;
+}
+
+.right-border {
+    border-right: 1px solid grey;
+    padding-right: 50px;
+}
+
+.left-border {
+    padding-left: 50px;
+}
+
+.btn.btn-primary {
+    color: #fafaeb;
+    background-color: rgb(5, 88, 5);
+    border-color: black;
+}
+
+.btn.btn-primary:hover {
+    color: #fafaeb;
+    background-color: #FF8C00;
+    border-color: black;
+}
+
+.form-group > .form-control {
+    background-color: rgb(255, 191, 112);
+}

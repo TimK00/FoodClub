@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css/display.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+    />
+    <title>My Info</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      
+        <nav class ="navigation-bar">
+          <img class ="logo" src="../css/images/logo.png" alt="logo">
+          <h2>FoodClub</h2>
+          <ul>
+            <li class ="topnav"><a href="" onclick="doLogout(event)">Logout</a></li>
+            <li class ="topnav"><a href="../about.html">About</a></li>
+            <li class ="topnav"><a href="../contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class ="sidebar">
+          <img class ="user-photo" src="../css/images/img-upload.jpeg" alt="your image here">
+          <ul>
+            <li class ="sidenav"><a href="./recipes.html">My Recipes</a></li>
+          </ul>
+        </nav>
+
+        <div class="container">
+          <div class="user-form">
+            <form>
+              <div class="form-row">
+                <div class="col-md-6">
+                  <label class="sr-only" for="UserName">User Name</label>
+                  <input
+                    id="UserName"
+                    class="form-control"
+                    type="text"
+                    name="recipe-name"
+                    placeholder="user name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="sr-only" for="formSelectDifficulty">User Email</label>
+                  <input
+                    id="UserEmail"
+                    class="form-control"
+                    type="text"
+                    name="user-email"
+                    placeholder="user email"
+                  />
+              </div>
+            </form>
+          </div>
+    
+          <div id="users"></div>
+        </div>
+
+    </div>
+  </body>
+</html>
